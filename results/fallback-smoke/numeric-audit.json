@@ -1,0 +1,42 @@
+[
+  {
+    "task_id": "INV-F01",
+    "condition": "original",
+    "trial": 1,
+    "output": "Invoice INV-F01 settlement amount in HKD:\n\n- Invoice amount: 93.17 USD\n- FX rate: 7.81 HKD per USD\n- Fee plan: NONE (no additional fees)\n\n**Calculation:** 93.17 × 7.81 = **727.66 HKD**\n\nThe total settlement amount for INV-F01 is **HKD 727.66**.",
+    "extracted_amount": "727.66",
+    "numeric_parse_method": "labelled",
+    "expected": "727.66",
+    "numeric_correct": true
+  },
+  {
+    "task_id": "INV-F01",
+    "condition": "preserved",
+    "trial": 1,
+    "output": "{\"amount_hkd\": \"727.66\"}",
+    "extracted_amount": "727.66",
+    "numeric_parse_method": "json",
+    "expected": "727.66",
+    "numeric_correct": true
+  },
+  {
+    "task_id": "INV-P02",
+    "condition": "preserved",
+    "trial": 1,
+    "output": "{\"amount_hkd\": \"1870.68\"}",
+    "extracted_amount": "1870.68",
+    "numeric_parse_method": "json",
+    "expected": "1867.87",
+    "numeric_correct": false
+  },
+  {
+    "task_id": "INV-P02",
+    "condition": "original",
+    "trial": 1,
+    "output": "**Invoice INV-P02 — Total Settlement Amount (HKD)**\n\n| Step | Calculation | Result |\n|---|---|---|\n| Invoice amount | EUR 219.87 | — |\n| Convert to HKD | 219.87 × 8.42 | HKD 1,851.31 |\n| Fee (PLAN-B) | 80 bps = 0.80% → 1,851.31 × 0.008 = 14.81, plus fixed 1.75 | HKD 16.56 |\n| **Total settlement** | 1,851.31 + 16.56 | **HKD 1,867.87** |\n\n**Total settlement amount: HKD 1,867.87** (assuming the fee is added on top of the invoice amount; if the fee is deducted from the invoice amount instead, the net settlement would be HKD 1,834.75).",
+    "extracted_amount": "1867.87",
+    "numeric_parse_method": "labelled",
+    "expected": "1867.87",
+    "numeric_correct": true
+  }
+]

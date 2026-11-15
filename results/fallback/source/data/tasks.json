@@ -1,0 +1,8 @@
+[
+ {"id":"INV-L01","family":"local","expected":"137.45","required_tools":["read_invoice"]},
+ {"id":"INV-L02","family":"local","expected":"258.90","required_tools":["read_invoice"]},
+ {"id":"INV-F01","family":"fx","expected":"727.66","required_tools":["read_invoice","get_fx_rate"]},
+ {"id":"INV-F02","family":"fx","expected":"683.96","required_tools":["read_invoice","get_fx_rate"]},
+ {"id":"INV-P01","family":"fee","expected":"1167.59","required_tools":["read_invoice","get_fx_rate","get_fee_policy"]},
+ {"id":"INV-P02","family":"fee","expected":"1867.87","required_tools":["read_invoice","get_fx_rate","get_fee_policy"]}
+]

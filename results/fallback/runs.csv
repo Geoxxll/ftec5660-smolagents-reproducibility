@@ -1,0 +1,152 @@
+task_id,family,condition,trial,max_steps,expected,output,json_valid,extracted_amount,numeric_parse_method,numeric_correct,structured_correct,evidence_supported_correct,state,api_calls,total_tokens,seconds
+INV-F02,fx,original,1,2,683.96,"Invoice INV-F02 details:
+- Amount: 81.23 EUR
+- Fee plan: NONE (no additional fees)
+- FX rate: 8.42 HKD per EUR
+
+Calculation: 81.23 × 8.42 = 683.96 HKD
+
+**Total settlement amount: 683.96 HKD**",False,683.96,labelled,True,False,False,max_steps_error,3,3915,2.423655583988875
+INV-F02,fx,preserved,1,2,683.96,"{""amount_hkd"": ""683.96""}",True,683.96,json,True,True,True,max_steps_error,3,3990,2.3654995830729604
+INV-L01,local,preserved,1,2,137.45,"{""amount_hkd"": ""137.45""}",True,137.45,json,True,True,True,success,2,3520,1.7413993338122964
+INV-L01,local,original,1,2,137.45,"{""amount_hkd"": ""137.45""}",True,137.45,json,True,True,True,success,2,3524,0.978829916100949
+INV-P02,fee,original,1,2,1867.87,"**Invoice INV-P02 — Total Settlement Amount (HKD)**
+
+1. **Invoice amount:** 219.87 EUR
+2. **Convert to HKD:** 219.87 × 8.42 = **1,851.31 HKD**
+3. **Fee (PLAN-B):** 80 basis points (0.80%) + 1.75 HKD fixed
+   - Percentage fee: 1,851.31 × 0.0080 = 14.81 HKD
+   - Total fee: 14.81 + 1.75 = **16.56 HKD**
+4. **Total settlement amount:** 1,851.31 + 16.56 = **1,867.87 HKD**
+
+**Answer: 1,867.87 HKD**",False,1867.87,labelled,True,False,False,max_steps_error,3,4171,3.650853124912828
+INV-P02,fee,preserved,1,2,1867.87,"{""amount_hkd"": ""1870.34""}",True,1870.34,json,False,False,False,max_steps_error,3,4144,3.656468041939661
+INV-P01,fee,preserved,1,2,1167.59,"{""amount_hkd"": ""1294.31""}",True,1294.31,json,False,False,False,max_steps_error,3,4146,2.921489791944623
+INV-P01,fee,original,1,2,1167.59,"**Invoice INV-P01 — Total Settlement Amount (HKD)**
+
+1. **Invoice amount:** 147.35 USD
+2. **Convert to HKD:** 147.35 × 7.81 = **1,150.80 HKD** (1,150.8035)
+3. **Fee (PLAN-A):** 125 basis points (1.25%) + fixed 2.40 HKD
+   - 1,150.8035 × 0.0125 = 14.385 HKD
+   - 14.385 + 2.40 = **16.785 HKD**
+4. **Total settlement:** 1,150.8035 + 16.785 = **1,167.59 HKD**
+
+**Total settlement amount: ≈ 1,167.59 HKD** (1,167.5885 HKD before rounding).",False,1167.59,labelled,True,False,False,max_steps_error,3,4187,3.502099124947563
+INV-L02,local,original,1,2,258.90,"{""amount_hkd"": ""258.90""}",True,258.90,json,True,True,True,success,2,3522,2.1975884588900954
+INV-L02,local,preserved,1,2,258.90,"{""amount_hkd"": ""258.90""}",True,258.90,json,True,True,True,success,2,3516,1.2571457920130342
+INV-F01,fx,preserved,1,2,727.66,"{""amount_hkd"": ""727.66""}",True,727.66,json,True,True,True,max_steps_error,3,3988,1.9702521250583231
+INV-F01,fx,original,1,2,727.66,"Invoice INV-F01 settlement amount in HKD:
+
+- Invoice amount: 93.17 USD
+- FX rate: 7.81 HKD per USD
+- **Total: 93.17 × 7.81 = 727.66 HKD** (approximately)
+
+Note: The invoice has no fee plan (NONE), so no additional fees apply.",False,727.66,labelled,True,False,False,max_steps_error,3,3920,3.1083231249358505
+INV-F02,fx,preserved,2,2,683.96,"{""amount_hkd"": ""683.96""}",True,683.96,json,True,True,True,max_steps_error,3,3994,2.3868463749531657
+INV-F02,fx,original,2,2,683.96,"The total settlement amount for invoice INV-F02 is **HKD 683.96**.
+
+Calculation:
+- Invoice amount: EUR 81.23
+- FX rate: 8.42 HKD per EUR
+- 81.23 × 8.42 = 683.9566 ≈ **HKD 683.96**
+
+(No additional fees apply, as the fee plan is ""NONE"".)",False,683.96,labelled,True,False,False,max_steps_error,3,3931,2.7896246248856187
+INV-P02,fee,original,2,2,1867.87,"# Settlement Calculation for INV-P02
+
+**Invoice details:**
+- Amount: 219.87 EUR
+- Fee plan: PLAN-B
+
+**Step 1: Convert to HKD**
+- FX rate: 8.42 HKD per EUR
+- 219.87 × 8.42 = **1,851.31 HKD**
+
+**Step 2: Apply PLAN-B fees**
+- Basis points: 80 bps (0.80%) → 1,851.31 × 0.0080 = 14.81 HKD
+- Fixed fee: 1.75 HKD
+- Total fees: 14.81 + 1.75 = **16.56 HKD**
+
+**Step 3: Total settlement amount**
+- 1,851.31 − 16.56 = **1,834.75 HKD**
+
+## Answer
+The total settlement amount for invoice INV-P02 is **1,834.75 HKD** (based on 219.87 EUR at 8.42 HKD/EUR, less 80 bps + 1.75 HKD in fees).",False,1834.75,labelled,False,False,False,max_steps_error,3,4234,3.663729416904971
+INV-P02,fee,preserved,2,2,1867.87,"{""amount_hkd"": ""1870.36""}",True,1870.36,json,False,False,False,max_steps_error,3,4148,2.5357927079312503
+INV-L02,local,preserved,2,2,258.90,"{""amount_hkd"": ""258.90""}",True,258.90,json,True,True,True,success,2,3518,1.5033573750406504
+INV-L02,local,original,2,2,258.90,"{""amount_hkd"": ""258.90""}",True,258.90,json,True,True,True,success,2,3512,1.6189849169459194
+INV-F01,fx,original,2,2,727.66,"The total settlement amount for invoice INV-F01 is **HKD 727.66**.
+
+Calculation:
+- Invoice amount: 93.17 USD
+- Exchange rate: 7.81 HKD per USD
+- 93.17 × 7.81 = 727.66 HKD",False,727.66,labelled,True,False,False,max_steps_error,3,3899,2.1356416249182075
+INV-F01,fx,preserved,2,2,727.66,"{""amount_hkd"": ""727.66""}",True,727.66,json,True,True,True,max_steps_error,3,3984,2.075793582946062
+INV-L01,local,preserved,2,2,137.45,"{""amount_hkd"": ""137.45""}",True,137.45,json,True,True,True,success,2,3518,1.4934384159278125
+INV-L01,local,original,2,2,137.45,"{""amount_hkd"": ""137.45""}",True,137.45,json,True,True,True,success,2,3518,2.164341374998912
+INV-P01,fee,original,2,2,1167.59,"**Invoice INV-P01 — Total Settlement in HKD**
+
+1. **Base amount:** 147.35 USD × 7.81 HKD/USD = **1,150.80 HKD** (147.35 × 7.81 = 1,150.8035)
+
+2. **Fee (PLAN-A):** 125 basis points (1.25%) + fixed 2.40 HKD
+   - 1,150.8035 × 0.0125 = 14.385 HKD
+   - 14.385 + 2.40 = **16.79 HKD** (16.785)
+
+3. **Total settlement:** 1,150.8035 + 16.785 = **1,167.59 HKD**
+
+**Total settlement amount: ≈ 1,167.59 HKD** (1,167.5885 before rounding)",False,1167.59,labelled,True,False,False,max_steps_error,3,4198,2.9771877920720726
+INV-P01,fee,preserved,2,2,1167.59,"{""amount_hkd"": ""1166.36""}",True,1166.36,json,False,False,False,max_steps_error,3,4132,2.5617733751423657
+INV-L01,local,original,3,2,137.45,"{""amount_hkd"": ""137.45""}",True,137.45,json,True,True,True,success,2,3516,1.4100294578820467
+INV-L01,local,preserved,3,2,137.45,"{""amount_hkd"": ""137.45""}",True,137.45,json,True,True,True,success,2,3518,1.8041673752013594
+INV-F02,fx,preserved,3,2,683.96,"{""amount_hkd"": ""683.96""}",True,683.96,json,True,True,True,max_steps_error,3,3986,2.445651083951816
+INV-F02,fx,original,3,2,683.96,"Invoice INV-F02 settlement amount in HKD:
+
+- Invoice amount: 81.23 EUR
+- FX rate: 8.42 HKD per EUR
+- **Total: 81.23 × 8.42 = 683.96 HKD**
+
+(Note: the invoice's fee plan is ""NONE,"" so no additional fees apply.)",False,683.96,labelled,True,False,False,max_steps_error,3,3916,2.621438874863088
+INV-L02,local,original,3,2,258.90,"{""amount_hkd"": ""258.90""}",True,258.90,json,True,True,True,success,2,3518,1.8119386250618845
+INV-L02,local,preserved,3,2,258.90,"{""amount_hkd"": ""258.90""}",True,258.90,json,True,True,True,success,2,3518,1.4292893749661744
+INV-P02,fee,preserved,3,2,1867.87,"{""amount_hkd"": ""1870.42""}",True,1870.42,json,False,False,False,max_steps_error,3,4134,1.9128847499378026
+INV-P02,fee,original,3,2,1867.87,"**Invoice INV-P02 settlement calculation (HKD):**
+
+1. **Convert amount to HKD:**
+   - 219.87 EUR × 8.42 HKD/EUR = **1,851.31 HKD**
+
+2. **Apply PLAN-B fees:**
+   - Percentage fee: 80 basis points = 0.80% → 1,851.31 × 0.0080 = **14.81 HKD**
+   - Fixed fee: **1.75 HKD**
+   - Total fees: 14.81 + 1.75 = **16.56 HKD**
+
+3. **Total settlement amount:**
+   - 1,851.31 − 16.56 = **1,834.75 HKD**
+
+**Total settlement amount: ≈ 1,834.75 HKD**",False,1834.75,labelled,False,False,False,max_steps_error,3,4173,3.2286722911521792
+INV-P01,fee,original,3,2,1167.59,"**Invoice INV-P01 — Total Settlement Amount (HKD)**
+
+1. **Convert amount to HKD**
+   - Amount: 147.35 USD
+   - FX rate: 7.81 HKD/USD
+   - 147.35 × 7.81 = **1,150.80 HKD** (1,150.8035)
+
+2. **Apply fee plan PLAN-A**
+   - Basis points: 125 bps = 1.25%
+   - Percentage fee: 1,150.8035 × 0.0125 = 14.385 HKD
+   - Fixed fee: 2.40 HKD
+   - Total fee: 14.385 + 2.40 = 16.785 HKD
+
+3. **Total settlement amount**
+   - 1,150.8035 + 16.785 = **1,167.59 HKD** (1,167.5885, rounded to 1,167.59)
+
+**Answer: ≈ 1,167.59 HKD**",False,1167.59,labelled,True,False,False,max_steps_error,3,4210,2.9777748328633606
+INV-P01,fee,preserved,3,2,1167.59,"{""amount_hkd"": ""1296.00""}",True,1296.00,json,False,False,False,max_steps_error,3,4138,2.8500316250137985
+INV-F01,fx,preserved,3,2,727.66,"{""amount_hkd"": ""727.66""}",True,727.66,json,True,True,True,max_steps_error,3,3998,2.4032053749542683
+INV-F01,fx,original,3,2,727.66,"Invoice INV-F01 settlement amount in HKD:
+
+- Invoice amount: 93.17 USD
+- FX rate: 7.81 HKD per USD
+- Fee plan: NONE (no additional fees)
+
+Calculation: 93.17 × 7.81 = **727.66 HKD** (rounded to 2 decimals)
+
+The total settlement amount for INV-F01 is approximately **HKD 727.66**.",False,727.66,labelled,True,False,False,max_steps_error,3,3937,2.803580499952659

@@ -1,0 +1,72 @@
+1 INV-F02 baseline: correct=True state=success calls=3
+1 INV-F02 limited: correct=False state=max_steps_error calls=3
+1 INV-L01 limited: correct=True state=success calls=2
+1 INV-L01 baseline: correct=True state=success calls=2
+1 INV-P02 baseline: correct=False state=success calls=3
+1 INV-P02 limited: correct=False state=max_steps_error calls=3
+1 INV-P01 limited: correct=False state=max_steps_error calls=3
+1 INV-P01 baseline: correct=False state=success calls=3
+1 INV-L02 baseline: correct=True state=success calls=2
+1 INV-L02 limited: correct=True state=success calls=2
+1 INV-F01 limited: correct=False state=max_steps_error calls=3
+1 INV-F01 baseline: correct=True state=success calls=3
+2 INV-F02 limited: correct=False state=max_steps_error calls=3
+2 INV-F02 baseline: correct=True state=success calls=3
+2 INV-P02 baseline: correct=False state=success calls=3
+2 INV-P02 limited: correct=False state=max_steps_error calls=3
+2 INV-L02 limited: correct=True state=success calls=2
+2 INV-L02 baseline: correct=True state=success calls=2
+2 INV-F01 baseline: correct=True state=success calls=3
+2 INV-F01 limited: correct=False state=max_steps_error calls=3
+2 INV-L01 limited: correct=True state=success calls=2
+2 INV-L01 baseline: correct=True state=success calls=2
+2 INV-P01 baseline: correct=False state=success calls=3
+2 INV-P01 limited: correct=False state=max_steps_error calls=3
+3 INV-L01 baseline: correct=True state=success calls=2
+3 INV-L01 limited: correct=True state=success calls=2
+3 INV-F02 limited: correct=False state=max_steps_error calls=3
+3 INV-F02 baseline: correct=True state=success calls=3
+3 INV-L02 baseline: correct=True state=success calls=2
+3 INV-L02 limited: correct=True state=success calls=2
+3 INV-P02 limited: correct=False state=max_steps_error calls=3
+3 INV-P02 baseline: correct=False state=success calls=3
+3 INV-P01 baseline: correct=False state=success calls=3
+3 INV-P01 limited: correct=False state=max_steps_error calls=3
+3 INV-F01 limited: correct=False state=max_steps_error calls=3
+3 INV-F01 baseline: correct=True state=success calls=3
+{
+  "baseline": {
+    "n": 18,
+    "answer_accuracy": 0.6666666666666666,
+    "verified_success_rate": 0.6666666666666666,
+    "fallback_rate": 0,
+    "error_count": 0,
+    "mean_api_calls": 2.6666666666666665,
+    "mean_total_tokens": 4764.444444444444,
+    "mean_seconds": 2.4530770021439015,
+    "trial_accuracies": [
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666
+    ],
+    "trial_accuracy_sd": 0.0,
+    "trial_accuracy_variance": 0.0
+  },
+  "limited": {
+    "n": 18,
+    "answer_accuracy": 0.3333333333333333,
+    "verified_success_rate": 0.3333333333333333,
+    "fallback_rate": 0.6666666666666666,
+    "error_count": 0,
+    "mean_api_calls": 2.6666666666666665,
+    "mean_total_tokens": 3804.8333333333335,
+    "mean_seconds": 2.6014573449631118,
+    "trial_accuracies": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "trial_accuracy_sd": 0.0,
+    "trial_accuracy_variance": 0.0
+  }
+}

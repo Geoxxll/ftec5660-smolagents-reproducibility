@@ -1,0 +1,54 @@
+{
+  "original": {
+    "n": 18,
+    "json_valid_rate": 0.3333333333333333,
+    "numeric_extraction_rate": 1,
+    "numeric_accuracy": 0.8888888888888888,
+    "structured_accuracy": 0.3333333333333333,
+    "evidence_supported_accuracy": 0.3333333333333333,
+    "normal_completion_rate": 0.3333333333333333,
+    "fallback_n": 12,
+    "fallback_rate": 0.6666666666666666,
+    "fallback_json_valid_rate": 0,
+    "fallback_structured_accuracy": 0,
+    "fallback_numeric_accuracy": 0.8333333333333334,
+    "unparseable_count": 0,
+    "error_count": 0,
+    "mean_api_calls": 2.6666666666666665,
+    "mean_total_tokens": 3877.8333333333335,
+    "mean_seconds": 2.559127425904282,
+    "trial_structured_accuracies": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "trial_structured_sd": 0.0,
+    "trial_structured_variance": 0.0
+  },
+  "preserved": {
+    "n": 18,
+    "json_valid_rate": 1,
+    "numeric_extraction_rate": 1,
+    "numeric_accuracy": 0.6666666666666666,
+    "structured_accuracy": 0.6666666666666666,
+    "evidence_supported_accuracy": 0.6666666666666666,
+    "normal_completion_rate": 0.3333333333333333,
+    "fallback_n": 12,
+    "fallback_rate": 0.6666666666666666,
+    "fallback_json_valid_rate": 1,
+    "fallback_structured_accuracy": 0.5,
+    "fallback_numeric_accuracy": 0.5,
+    "unparseable_count": 0,
+    "error_count": 0,
+    "mean_api_calls": 2.6666666666666665,
+    "mean_total_tokens": 3882.777777777778,
+    "mean_seconds": 2.184138115767079,
+    "trial_structured_accuracies": [
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666
+    ],
+    "trial_structured_sd": 0.0,
+    "trial_structured_variance": 0.0
+  }
+}

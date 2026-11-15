@@ -1,0 +1,50 @@
+{
+  "original": {
+    "n": 2,
+    "json_valid_rate": 0,
+    "numeric_extraction_rate": 1,
+    "numeric_accuracy": 1,
+    "structured_accuracy": 0,
+    "evidence_supported_accuracy": 0,
+    "normal_completion_rate": 0,
+    "fallback_n": 2,
+    "fallback_rate": 1.0,
+    "fallback_json_valid_rate": 0,
+    "fallback_structured_accuracy": 0,
+    "fallback_numeric_accuracy": 1,
+    "unparseable_count": 0,
+    "error_count": 0,
+    "mean_api_calls": 3,
+    "mean_total_tokens": 4060.5,
+    "mean_seconds": 3.2459642289904878,
+    "trial_structured_accuracies": [
+      0
+    ],
+    "trial_structured_sd": 0,
+    "trial_structured_variance": 0
+  },
+  "preserved": {
+    "n": 2,
+    "json_valid_rate": 1,
+    "numeric_extraction_rate": 1,
+    "numeric_accuracy": 0.5,
+    "structured_accuracy": 0.5,
+    "evidence_supported_accuracy": 0.5,
+    "normal_completion_rate": 0,
+    "fallback_n": 2,
+    "fallback_rate": 1.0,
+    "fallback_json_valid_rate": 1,
+    "fallback_structured_accuracy": 0.5,
+    "fallback_numeric_accuracy": 0.5,
+    "unparseable_count": 0,
+    "error_count": 0,
+    "mean_api_calls": 3,
+    "mean_total_tokens": 4062,
+    "mean_seconds": 2.4978188540553674,
+    "trial_structured_accuracies": [
+      0.5
+    ],
+    "trial_structured_sd": 0,
+    "trial_structured_variance": 0
+  }
+}

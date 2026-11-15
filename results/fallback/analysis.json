@@ -1,0 +1,8 @@
+{
+  "post_run_numeric_extractor_correction": true,
+  "frozen_evaluator_sha256": "8b4ab8f6f63673bf6f8ec7acc930d436d7fddd4916c2cec751d07843d49ea6a6",
+  "analysis_evaluator_sha256": "9a6668af6a769ca7e5ee4fbe3a4dff82b02d4866b71857bdf35f574b0c2f5b37",
+  "primary_json_and_structured_metrics_changed": false,
+  "explanation": "Secondary numeric extraction bug fix after raw-output audit: ignore invoice IDs before final labels; recognize bullet-prefixed Total labels; ignore parenthetical workings/rates. Genuine conflicting declared totals remain ambiguous. No expected values passed to extractor; no model calls rerun; no ground-truth or primary-scoring change.",
+  "verification": "Three regression cases were observed failing before the fix and passing afterwards. Original run metadata and source snapshots remain unchanged."
+}

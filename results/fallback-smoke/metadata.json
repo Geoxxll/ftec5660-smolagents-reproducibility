@@ -1,0 +1,40 @@
+{
+  "study": "fallback_constraint_preservation",
+  "started_utc": "2026-11-15T12:33:06.022363+00:00",
+  "python": "3.14.7",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "provider": "DeepSeek",
+  "base_url": "https://api.deepseek.com",
+  "model_id": "deepseek-flash",
+  "temperature": 0.2,
+  "top_p": 1.0,
+  "max_tokens": 700,
+  "thinking": "disabled",
+  "api_seed": null,
+  "trials": 1,
+  "task_ids": [
+    "INV-F01",
+    "INV-P02"
+  ],
+  "task_order_seed": 5660,
+  "condition_max_steps": {
+    "original": 2,
+    "preserved": 2
+  },
+  "treatment": "append exact TASK_CONSTRAINTS to final_answer.pre_messages only",
+  "task_constraints": "Task constraints:\nUse only invoice amounts, exchange rates and fees retrieved from tools; do not invent missing data.\nIf currency is HKD, use rate 1; otherwise use the retrieved HKD-per-unit exchange rate.\nIf fee_plan is NONE, there is no fee; otherwise apply the retrieved fee policy.\nTotal HKD = amount * rate * (1 + basis_points / 10000) + fixed_hkd.\nRound ONLY the final total to 2 decimal places, half up.\nThe final answer must be a single JSON object with exactly one field: {\"amount_hkd\": \"123.45\"}.\nReturn no prose, Markdown, or code fences.",
+  "normal_instructions": "Task constraints:\nUse only invoice amounts, exchange rates and fees retrieved from tools; do not invent missing data.\nIf currency is HKD, use rate 1; otherwise use the retrieved HKD-per-unit exchange rate.\nIf fee_plan is NONE, there is no fee; otherwise apply the retrieved fee policy.\nTotal HKD = amount * rate * (1 + basis_points / 10000) + fixed_hkd.\nRound ONLY the final total to 2 decimal places, half up.\nThe final answer must be a single JSON object with exactly one field: {\"amount_hkd\": \"123.45\"}.\nReturn no prose, Markdown, or code fences.\nUse the available tools to obtain invoice data. Independent FX and fee lookups may be batched.\nWhen tools are available, submit this JSON object as the answer argument of final_answer.",
+  "packages": {
+    "smolagents": "1.20.0",
+    "openai": "3.51.0",
+    "huggingface-hub": "2.4.0"
+  },
+  "sha256": {
+    "fallback_experiment.py": "13ebb275defe6d278a47311f3f2f06ae97c737f3018d529a14e178ed68aaac4a",
+    "fallback_evaluation.py": "8b4ab8f6f63673bf6f8ec7acc930d436d7fddd4916c2cec751d07843d49ea6a6",
+    "experiment.py": "6bee350166132c740727882f5613a4dc3cba5fed6287115a309711959e30f652",
+    "evaluation.py": "1ddc9988784ca5690cdf1f69c1dab81167a014fdc28c24c91bc60ffef4f0059d",
+    "data/fixtures.json": "f73e3e01c5388497f98645b41b4c5c60c86d21c15d7b9e6e5a063f2b4dc1d6fe",
+    "data/tasks.json": "3c5c88fe74b6a0e115ed23dc4a6f180ed3ec8ebd8f1a5ff523c61e7e90858d7b"
+  }
+}
