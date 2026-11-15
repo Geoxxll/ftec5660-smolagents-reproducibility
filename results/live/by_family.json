@@ -1,0 +1,110 @@
+{
+  "local": {
+    "baseline": {
+      "n": 6,
+      "answer_accuracy": 1,
+      "verified_success_rate": 1,
+      "fallback_rate": 0,
+      "error_count": 0,
+      "mean_api_calls": 2,
+      "mean_total_tokens": 3445.3333333333335,
+      "mean_seconds": 1.808972853817977,
+      "trial_accuracies": [
+        1,
+        1,
+        1
+      ],
+      "trial_accuracy_sd": 0.0,
+      "trial_accuracy_variance": 0.0
+    },
+    "limited": {
+      "n": 6,
+      "answer_accuracy": 1,
+      "verified_success_rate": 1,
+      "fallback_rate": 0,
+      "error_count": 0,
+      "mean_api_calls": 2,
+      "mean_total_tokens": 3447,
+      "mean_seconds": 1.8458230210235342,
+      "trial_accuracies": [
+        1,
+        1,
+        1
+      ],
+      "trial_accuracy_sd": 0.0,
+      "trial_accuracy_variance": 0.0
+    }
+  },
+  "fx": {
+    "baseline": {
+      "n": 6,
+      "answer_accuracy": 1,
+      "verified_success_rate": 1,
+      "fallback_rate": 0,
+      "error_count": 0,
+      "mean_api_calls": 3,
+      "mean_total_tokens": 5347.666666666667,
+      "mean_seconds": 2.7026804376315945,
+      "trial_accuracies": [
+        1,
+        1,
+        1
+      ],
+      "trial_accuracy_sd": 0.0,
+      "trial_accuracy_variance": 0.0
+    },
+    "limited": {
+      "n": 6,
+      "answer_accuracy": 0,
+      "verified_success_rate": 0,
+      "fallback_rate": 1,
+      "error_count": 0,
+      "mean_api_calls": 3,
+      "mean_total_tokens": 3843.6666666666665,
+      "mean_seconds": 2.912062486167997,
+      "trial_accuracies": [
+        0,
+        0,
+        0
+      ],
+      "trial_accuracy_sd": 0.0,
+      "trial_accuracy_variance": 0.0
+    }
+  },
+  "fee": {
+    "baseline": {
+      "n": 6,
+      "answer_accuracy": 0,
+      "verified_success_rate": 0,
+      "fallback_rate": 0,
+      "error_count": 0,
+      "mean_api_calls": 3,
+      "mean_total_tokens": 5500.333333333333,
+      "mean_seconds": 2.847577714982132,
+      "trial_accuracies": [
+        0,
+        0,
+        0
+      ],
+      "trial_accuracy_sd": 0.0,
+      "trial_accuracy_variance": 0.0
+    },
+    "limited": {
+      "n": 6,
+      "answer_accuracy": 0,
+      "verified_success_rate": 0,
+      "fallback_rate": 1,
+      "error_count": 0,
+      "mean_api_calls": 3,
+      "mean_total_tokens": 4123.833333333333,
+      "mean_seconds": 3.046486527697804,
+      "trial_accuracies": [
+        0,
+        0,
+        0
+      ],
+      "trial_accuracy_sd": 0.0,
+      "trial_accuracy_variance": 0.0
+    }
+  }
+}

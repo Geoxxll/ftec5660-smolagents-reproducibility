@@ -1,0 +1,13 @@
+{
+  "description": "Synthetic teaching data, not live financial quotes. Rates are HKD per one currency unit. Round only final total with ROUND_HALF_UP.",
+  "invoices": {
+    "INV-L01": {"amount": "137.45", "currency": "HKD", "fee_plan": "NONE"},
+    "INV-L02": {"amount": "258.90", "currency": "HKD", "fee_plan": "NONE"},
+    "INV-F01": {"amount": "93.17", "currency": "USD", "fee_plan": "NONE"},
+    "INV-F02": {"amount": "81.23", "currency": "EUR", "fee_plan": "NONE"},
+    "INV-P01": {"amount": "147.35", "currency": "USD", "fee_plan": "PLAN-A"},
+    "INV-P02": {"amount": "219.87", "currency": "EUR", "fee_plan": "PLAN-B"}
+  },
+  "rates": {"USD": "7.81", "EUR": "8.42"},
+  "fees": {"PLAN-A": {"basis_points": 125, "fixed_hkd": "2.40"}, "PLAN-B": {"basis_points": 80, "fixed_hkd": "1.75"}}
+}

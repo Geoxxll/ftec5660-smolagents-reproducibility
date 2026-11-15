@@ -1,0 +1,36 @@
+{
+  "baseline": {
+    "n": 18,
+    "answer_accuracy": 0.6666666666666666,
+    "verified_success_rate": 0.6666666666666666,
+    "fallback_rate": 0,
+    "error_count": 0,
+    "mean_api_calls": 2.6666666666666665,
+    "mean_total_tokens": 4764.444444444444,
+    "mean_seconds": 2.4530770021439015,
+    "trial_accuracies": [
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666
+    ],
+    "trial_accuracy_sd": 0.0,
+    "trial_accuracy_variance": 0.0
+  },
+  "limited": {
+    "n": 18,
+    "answer_accuracy": 0.3333333333333333,
+    "verified_success_rate": 0.3333333333333333,
+    "fallback_rate": 0.6666666666666666,
+    "error_count": 0,
+    "mean_api_calls": 2.6666666666666665,
+    "mean_total_tokens": 3804.8333333333335,
+    "mean_seconds": 2.6014573449631118,
+    "trial_accuracies": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "trial_accuracy_sd": 0.0,
+    "trial_accuracy_variance": 0.0
+  }
+}

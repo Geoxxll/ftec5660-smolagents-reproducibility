@@ -1,0 +1,32 @@
+{
+  "baseline": {
+    "n": 1,
+    "answer_accuracy": 1,
+    "verified_success_rate": 1,
+    "fallback_rate": 0,
+    "error_count": 0,
+    "mean_api_calls": 2,
+    "mean_total_tokens": 3446,
+    "mean_seconds": 2.3603434169199318,
+    "trial_accuracies": [
+      1
+    ],
+    "trial_accuracy_sd": 0,
+    "trial_accuracy_variance": 0
+  },
+  "limited": {
+    "n": 1,
+    "answer_accuracy": 1,
+    "verified_success_rate": 1,
+    "fallback_rate": 0,
+    "error_count": 0,
+    "mean_api_calls": 2,
+    "mean_total_tokens": 3444,
+    "mean_seconds": 1.9954719161614776,
+    "trial_accuracies": [
+      1
+    ],
+    "trial_accuracy_sd": 0,
+    "trial_accuracy_variance": 0
+  }
+}
